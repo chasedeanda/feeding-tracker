@@ -1,0 +1,16 @@
+{
+  "name": "feeding-tracker",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "material-ui": "^0.15.1",
+    "meteor-node-stubs": "~0.2.0",
+    "moment": "^2.13.0",
+    "react": "^15.1.0",
+    "react-addons-pure-render-mixin": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
+}
