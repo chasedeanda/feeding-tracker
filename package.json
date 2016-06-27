@@ -12,5 +12,22 @@
     "react": "^15.1.0",
     "react-addons-pure-render-mixin": "^15.1.0",
     "react-dom": "^15.1.0"
+  },
+  "version": "1.0.0",
+  "description": "Feed tracker.",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chasedeanda/feeding-tracker.git"
+  },
+  "author": "chasedeanda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chasedeanda/feeding-tracker/issues"
+  },
+  "homepage": "https://github.com/chasedeanda/feeding-tracker#readme",
+  "engines": {
+    "node": "0.12.4"
   }
 }
