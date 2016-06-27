@@ -11,7 +11,7 @@ import { createContainer } from 'meteor/react-meteor-data';
 import { Feeds} from '../api/_collections.js';
 let {array} = React.PropTypes;
 
-injectTapEventPlugin();
+//injectTapEventPlugin();
  
 // App component - represents the whole app
 let App = React.createClass({
@@ -54,7 +54,7 @@ let AppComponent = React.createClass({
           <span className="glyphicon glyphicon-menu-hamburger menu-toggle" onClick={(e)=>{this.setState({open:!this.state.open})}}></span>
           <div className="header">
             <span className="lead block bottom0"> Last time Cohen was fed: </span>
-            <span className="feed-time">{moment(_.get(this.props.last_feed,'date')).format('hh:mm A')}</span>
+            <span className="feed-time">{moment(_.get(this.state.last_feed,'date')).format('hh:mm A')}</span>
             <hr/>
           </div>
           <button className="feed-btn center-block btn-lg" onClick={this.trackFeed}>Track Feed</button>
@@ -69,7 +69,7 @@ let AppComponent = React.createClass({
  
 export default createContainer(() => {
   return {
-    feeds: Feeds.find({},{sort: { time: -1 }}).fetch()
+    feeds: Feeds.find({},{sort: { date: -1 }}).fetch()
   };
 }, App);
 
