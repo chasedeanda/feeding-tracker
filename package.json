@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/chasedeanda/feeding-tracker#readme",
   "engines": {
-    "node": "0.12.4"
+    "node": "4.4.6"
   }
 }
